@@ -47,9 +47,9 @@ class Helper {
 		return string.slice(0, string.length - length);
 	}
 	
-	/** Escapes RegEx special chars so that it can be included in a RegEx pattern without side effects -[]{}()*+?.,\^$|# whitespace */
+	/** Escapes RegEx special chars so that it can be included in a RegEx pattern without side effects -[]{}()*+?.,\^$|#/ */
 	static sanitizeRegEx(text) {
-		return text.replace(/[-[\]{}()*+?.,\\^$|#\\s]/g, '\\$&');
+		return text.replace(/[-[\]{}()*+?.,\\^$|#/]/g, '\\$&');
 	}
 }
 
