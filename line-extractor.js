@@ -6,9 +6,10 @@ class LineExtractor {
 	newHaystack = "";
 	output = "";
 	
-	constructor(needle, haystack) {
+	constructor(needle, haystack, output) {
 		this.needle = needle;
 		this.haystack = haystack;
+		this.output = output;
 		
 		if ( ! needle || ! haystack ) {
 			newHaystack = haystack;
@@ -28,7 +29,7 @@ class LineExtractor {
 		// extract lines
 		let haystackArray = haystack.split("\n");
 		let newHaystack = "";
-		let output = "";
+		output = "";
 		for ( let line of haystackArray ) {
 			if ( line.search(regExPattern) !== -1 ) {
 				output += line + "\n";
@@ -38,7 +39,9 @@ class LineExtractor {
 		}
 		
 		this.newHaystack = Helper.chopRight(newHaystack, 1);
-		this.output = Helper.chopRight(output, 1);
+		
+		if ( this.output && output ) this.output += "\n";
+		this.output += Helper.chopRight(output, 1);
 	}
 }
 
@@ -61,7 +64,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 	let clear = document.getElementById('clear');
 	
 	extractLines.addEventListener('click', function(e) {
-		let lineExtractor = new LineExtractor(needle.value, haystack.value);
+		let lineExtractor = new LineExtractor(needle.value, haystack.value, output.value);
 		output.value = lineExtractor.output;
 		haystack.value = lineExtractor.newHaystack;
 	});
