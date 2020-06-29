@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-	<title></title>
+	<title>Line Extractor</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="style.css" />
 	<script src="line-extractor.js"></script>
