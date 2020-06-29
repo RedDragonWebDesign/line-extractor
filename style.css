@@ -2,18 +2,10 @@ body {
 	margin: 1em;
 }
 
-textarea {
-}
-
-button {
-}
-
 #needle {
 	width: 250px;
 	height: 100px;
 }
-
-#extract-lines {}
 
 #container {
 	display: flex;
