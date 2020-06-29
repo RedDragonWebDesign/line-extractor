@@ -74,6 +74,7 @@ gdpr</textarea><br />
 	
 	<p>
 	<button id="extract-lines">Extract Lines</button>
+	<button id="clear">Clear</button>
 	</p>
 	
 	<p>

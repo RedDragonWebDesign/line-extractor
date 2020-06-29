@@ -58,10 +58,17 @@ window.addEventListener('DOMContentLoaded', (e) => {
 	let needle = document.getElementById('needle');
 	let haystack = document.getElementById('haystack');
 	let output = document.getElementById('output');
+	let clear = document.getElementById('clear');
 	
 	extractLines.addEventListener('click', function(e) {
 		let lineExtractor = new LineExtractor(needle.value, haystack.value);
 		output.value = lineExtractor.output;
 		haystack.value = lineExtractor.newHaystack;
+	});
+	
+	clear.addEventListener('click', function(e) {
+		needle.value = "";
+		haystack.value = "";
+		output.value = "";
 	});
 });
