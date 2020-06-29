@@ -12,7 +12,7 @@ class LineExtractor {
 		this.output = output;
 		
 		if ( ! needle || ! haystack ) {
-			newHaystack = haystack;
+			this.newHaystack = haystack;
 			return;
 		}
 		
