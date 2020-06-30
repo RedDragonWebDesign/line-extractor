@@ -1,3 +1,6 @@
+// Copyright https://www.RedDragonWebDesign.com/
+// Permission required to use or copy code. All rights reserved.
+
 "use strict";
 
 class LineExtractor {
@@ -50,9 +53,9 @@ class Helper {
 		return string.slice(0, string.length - length);
 	}
 	
-	/** Escapes RegEx special chars so that it can be included in a RegEx pattern without side effects -[]{}()*+?.,\^$|#/ */
+	/** Escapes RegEx special chars so that they can be included in a RegEx pattern without side effects -[]{}()*+?.,\^$|#/ */
 	static sanitizeRegEx(text) {
-		return text.replace(/[-[\]{}()*+?.,\\^$|#/]/g, '\\$&');
+		return text.replace(/[-[\]{}()*+?.,\\^$|#/]/g, '\\$&'); // &$ = matched substring
 	}
 }
 
