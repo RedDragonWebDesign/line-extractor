@@ -78,7 +78,7 @@ gdpr</textarea><br />
 	</p>
 	
 	<p>
-	Want to report a bug or request a feature? <a href="https://github.com/GeneralKenobi1/line-extractor/issues">Create an issue</a> on our GitHub.
+	Want to report a bug or request a feature? <a href="https://github.com/RedDragonWebDesign/line-extractor/issues">Create an issue</a> on our GitHub.
 	</p>
 </body>
 
