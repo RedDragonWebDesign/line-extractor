@@ -49,6 +49,7 @@ class LineExtractor {
 }
 
 class Helper {
+	/** take a string, and chop off the amount of text on the right specified, leaving the text on the left */
 	static chopRight(string, length) {
 		return string.slice(0, string.length - length);
 	}
