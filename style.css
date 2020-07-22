@@ -26,4 +26,5 @@ body {
 
 textarea {
 	font-size: 10pt;
+	tab-size: 4;
 }
